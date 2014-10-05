@@ -39,7 +39,7 @@ public class MuseumActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        KioskModeHelper.enableKioskMode(this);
+        KioskModeHelper.enableKioskMode(this, true);
     }
 
     @Override
@@ -51,7 +51,7 @@ public class MuseumActivity extends Activity {
     @Override
     protected void onStop() {
         super.onStop();
-        KioskModeHelper.disableKioskMode(this);
+        KioskModeHelper.disableKioskMode(this, true);
     }
 
     private void loadContent() {
